@@ -1,11 +1,21 @@
 <template>
-    <img
-        alt="Vue logo"
-        src="./assets/logo.png">
-    <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+    <router-link to="/">
+        Home
+    </router-link>
+    |
+    <router-link to="/about">
+        About
+    </router-link>
+    |
+    <router-link to="/todo">
+        TodoList
+    </router-link>
+
+    <router-view />
 </template>
 
 <script lang="ts" setup>
+// eslint-disable-next-line no-unused-vars
 import HelloWorld from './components/HelloWorld.vue'
 </script>
 

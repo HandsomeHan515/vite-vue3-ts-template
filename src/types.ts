@@ -3,3 +3,9 @@ export type List = {
     name: string,
     completed: boolean
 }
+
+export type TodoItem = {
+    id: string,
+    done: boolean,
+    text: string
+}
